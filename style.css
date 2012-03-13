@@ -1,0 +1,402 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0) !important;
+    -webkit-touch-callout: none !important;
+    -webkit-text-size-adjust: none !important;
+    -webkit-user-select: none !important;
+}
+*:focus {
+    outline: none;
+}
+::-webkit-scrollbar {
+    display:none;
+}
+
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6{  
+    margin:0;  
+    padding:0;  
+    -webkit-text-size-adjust:none;  
+}  
+body{
+    background:#000;
+}
+
+.wrapper {
+    height:480px;
+    width:320px;
+    overflow:hidden;
+    position:fixed;
+    left:0px;
+    top:0px;
+}
+.box {
+    width:320px;
+    overflow:hidden;
+    position:absolute;
+    background:none;
+}
+.box.top {
+    background-image:url('color-rainbow-retina.png');
+    background-size: 320px 480px;
+    background-position: top;
+    border-bottom: 2px solid rgba(255,255,255,0.0);
+    border-left:0;
+    border-right:0;
+    top:0;
+    left:0;
+    height:478px;
+    box-shadow:0 2px 4px rgba(0,0,0,0.8);
+    overflow:visible;
+}
+.box.top.down {
+    border-bottom: 2px solid rgba(255,255,255,0.0);
+}
+.box.bottom {
+    background-image:url('color-rainbow-retina.png');
+    background-size: 320px 480px;
+    background-position: 0px 0px;
+    border-left:0;
+    border-right:0;
+    height:0px; 
+    top:482px;
+    left:0;
+    overflow:visible;
+    border-top:2px solid rgba(255,255,255,0);
+}
+.box.bottom.down {
+    border-top:2px solid rgba(255,255,255,0.0);
+    box-shadow:0 -1px 5px rgba(0,0,0,0.6);
+}    
+.box.springboard {
+    background:none;
+    position:fixed;
+    padding:30px 6px 90px 6px;
+    left:0;
+    height:660px;
+    width: 308
+}
+.box.under {
+    background-image:url('fabric2.png');
+    background-size: 320px 480px;
+    background-position: 0px 0px;
+    
+    top:191;
+    left:0;
+    height:480px;
+}
+.iconwrapper label {
+    display:block;
+    font-family:HelveticaNeue-Bold;
+    font-size:11px;
+    text-shadow:0 2px 2px rgba(0,0,0,0.8), 0 2px 5px rgba(0,0,0,0.7);
+    text-align:center;
+    width:57px;
+    height:20px;
+    margin:auto; 
+    line-height:25px;
+    color:#fff;
+}
+.iconwrapper {
+    float:left;
+    height:57px;
+    width:57px;
+    padding: 9px 9px 19px 9px;
+    background:rgba(111,111,111,0.0);
+    border: 1px solid rgba(111,111,111,0.0)
+}
+.icon {
+    height:57px;
+    width:57px;
+    border-radius:9px;
+    background:#000;
+    margin: auto;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.9),
+        0 3px 4px rgba(0,0,0,0.7),
+        0 1px 2px rgba(0,0,0,0.3);
+}
+ div.icon.shine:before {
+    content : " ";
+    display :block;
+    background : -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.3)));
+    height : 30px;
+    width : 57px;
+    position : relative;
+    -webkit-border-radius : 18px;
+    -webkit-border-bottom-right-radius : 57px 15px;
+    -webkit-border-bottom-left-radius : 57px 15px;
+    -webkit-box-shadow : inset 0px 1px 1px rgba(255, 255, 255, 0.4);
+
+}
+.imageloader {
+    background-image:url('color-rainbow-retina.png'),
+    url('ios-wood.png'),
+    url('fabric2.png'),
+    url('wallpaper1.jpeg'),
+    url('wallpaper2.jpeg'),
+    url('wallpaper3.jpeg'),
+    url('wallpaper4.png'),
+    url('wallpaper5.png'),
+    url('wallpaper6.png');
+    display:none;
+    position:fixed;
+    z-index:0;
+    height:0;
+    width:0;
+    overflow:hidden;
+    left:-1000px;
+    top:-1000px;
+
+}
+.icon.folder {
+    height:51px;
+    width:51px;
+    background-image:url('fabric2.png');
+    border: 3px solid #dfdfdf;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.9),
+        0 3px 4px rgba(0,0,0,0.7),
+        0 1px 2px rgba(0,0,0,0.3),
+        2px 2px 3px rgba(0,0,0,0.7) inset,
+        -2px -2px 3px rgba(0,0,0,0.7) inset;
+
+}
+
+.icon.wall1 {
+    background-image:url('color-rainbow-retina.png');
+    background-size:160px 240px;
+    background-position: -50px -100px;
+}
+.icon.wall2 {
+    background-image:url('wallpaper1.jpeg');
+    background-size:160px 240px;
+    background-position: -50px -100px;
+}
+.icon.wall3 {
+    background-image:url('wallpaper2.jpeg');
+    background-size:160px 240px;
+    background-position: -50px -100px;
+}
+.icon.wall4 {
+    background-image:url('wallpaper3.jpeg');
+    background-size:160px 240px;
+    background-position: -50px -100px;
+}
+.icon.wall5 {
+    background-image:url('wallpaper4.png');
+    background-size:160px 240px;
+    background-position: -50px -100px;
+}
+.icon.wall6 {
+    background-image:url('wallpaper5.png');
+    background-size:160px 240px;
+    background-position: -50px -100px;
+}
+.icon.wall7 {
+    background-image:url('wallpaper6.png');
+    background-size:160px 240px;
+    background-position: -50px -100px;
+}
+.folder4 .icon {
+    background-image:url('ios-wood.png');
+    background-size:49px 60px;
+    background-position: 1px -5px;
+    border: 3px solid #CBA672;
+}
+.arrow.top {
+width:15px;
+    height:15px;
+    -webkit-transform: rotateZ(45deg);
+    border: 2px solid rgba(255,255,255,0.0);
+    border-bottom: 0;
+    border-right: 0;
+    position:absolute;
+    margin:auto;
+    bottom:-10px;
+    left:36px;
+    -webkit-mask-image : 
+        -webkit-gradient(linear, left top, right bottom, 
+            from(#000000), 
+            color-stop(0.8,#000000), 
+            color-stop(0.8, transparent), 
+            to(transparent));
+    opacity:0;
+    overflow:hidden;
+}
+.inside-arrow.top:before {
+    -webkit-transform: rotateZ(45deg);
+    background:none;
+    top:17px;
+    left:6px;
+width:17px;
+    height:17px;
+    position:relative;
+    box-shadow:3px 3px 3px rgba(0,0,0,0.8)inset;
+    content:' ';
+    display:block;
+
+}
+.inside-arrow.top {
+    -webkit-transform: rotateZ(-45deg);
+    background-image:url('fabric2.png');
+    background-size: 320px 480px;
+    background-position: -30px -468px;
+width:30px;
+    height:30px;
+    position:relative;
+    top:-15px;
+    left:-15px;
+
+}
+.arrow.bottom {
+    width:15px;
+    height:15px;
+    -webkit-transform: rotateZ(45deg);
+    position:absolute;
+    margin:auto;
+    top:-10px;
+    left:36px;
+    -webkit-mask-image : 
+        -webkit-gradient(linear, left top, right bottom, 
+            from(#000000), 
+            color-stop(0.7,#000000), 
+            color-stop(0.7, transparent), 
+            to(transparent));
+    border: 2px solid rgba(255,255,255,0.0);
+    border-bottom:0;
+    border-right:0;
+    overflow:hidden;
+    opacity:0;
+}
+.inside-arrow.bottom {
+    -webkit-transform: rotateZ(-45deg);
+    background-image:url('color-rainbow-retina.png');
+    background-size: 320px 480px;
+    background-position: -32px -461px;
+width:25px;
+    height:25px;
+    position:relative;
+    top:-10px;
+    left:-10px;
+
+}
+
+.arrow.bottom.down {
+    -webkit-animation : openfolder-arrowbottom 1000ms linear;
+
+}
+.arrow.bottom.up {
+    -webkit-animation : closefolder-arrowbottom 2000ms linear;
+
+}
+.arrow.top.down {
+    -webkit-animation : openfolder-arrowtop 1000ms linear;
+
+}
+.arrow.top.up {
+    -webkit-animation : closefolder-arrowtop 2000ms linear;
+
+}
+.iconwrapper.active label.down {
+    -webkit-animation : openfolder-labelfoldertop 1000ms linear;
+
+}
+.iconwrapper.active label.up {
+    -webkit-animation : closefolder-labelfoldertop 2000ms linear;
+
+}
+
+@-webkit-keyframes openfolder-arrowbottom {
+0% {
+    -webkit-transition : all 0ms;
+    -webkit-transition-delay: 0ms;
+    opacity : 1;
+}
+25% {
+    -webkit-transition : opacity 200ms;
+}
+50% {
+    opacity : 0;
+}
+75% {
+}
+100% {
+}
+}
+@-webkit-keyframes closefolder-arrowbottom {
+0% {
+    -webkit-transition : all 0ms;
+    -webkit-transition-delay: 0ms;
+    opacity : 1;
+}
+25% {
+}
+50% {
+}
+75% {
+    -webkit-transition : opacity 300ms;
+}
+99% {
+    opacity : 1;
+}
+100% {
+    opacity : 0;
+}
+}
+@-webkit-keyframes openfolder-arrowtop {
+0% {
+    -webkit-transition : all 0ms;
+    -webkit-transition-delay: 0ms;
+    opacity : 1;
+}
+25% {
+}
+50% {
+}
+75% {
+}
+100% {
+}
+}
+@-webkit-keyframes closefolder-arrowtop {
+0% {
+    -webkit-transition : all 0ms;
+    -webkit-transition-delay: 0ms;
+    opacity : 1;
+}
+25% {
+
+    opacity : 1;
+}
+26% {
+    opacity : 0;
+}
+100% {
+}
+}
+@-webkit-keyframes openfolder-labelfoldertop {
+0% {
+}
+25% {
+}
+50% {
+}
+75% {
+}
+100% {
+}
+}
+@-webkit-keyframes closefolder-labelfoldertop {
+0% {
+    -webkit-transition : all 0ms;
+    -webkit-transition-delay: 0ms;
+    opacity : 0;
+}
+25% {
+}
+50% {
+}
+54% {
+    opacity : 0;
+}
+55% {
+    opacity : 1;
+}
+}
